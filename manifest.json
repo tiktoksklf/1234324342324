@@ -1,7 +1,7 @@
 {
-  "name": "Fake App",
-  "short_name": "FakeApp",
-  "start_url": "./",
+  "name": "Trust Wallet",
+  "short_name": "Trust",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#317EFB",
