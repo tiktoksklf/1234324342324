@@ -1,8 +1,7 @@
-// manifest.json
 {
   "name": "Fake App",
   "short_name": "FakeApp",
-  "start_url": "./index.html",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#317EFB",
