@@ -1,13 +1,6 @@
-// sw.js - simple service worker
-self.addEventListener('install', (event) => {
-  event.waitUntil(self.skipWaiting());
-});
+self.addEventListener('install', e => self.skipWaiting());
+self.addEventListener('activate', e => self.clients.claim());
 
-self.addEventListener('activate', (event) => {
-  event.waitUntil(self.clients.claim());
-});
-
-self.addEventListener('fetch', (event) => {
-  // Just do a simple fetch, no caching for this basic example
-  event.respondWith(fetch(event.request));
+self.addEventListener('fetch', e => {
+  e.respondWith(fetch(e.request));
 });
